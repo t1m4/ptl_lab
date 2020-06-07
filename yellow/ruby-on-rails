@@ -1,0 +1,7 @@
+render params[:id]
+'test'
+{ inline => '<%= `id`  %>' }
+
+
+id[inline]=<%= `id`  %>
+id[inline]=<%25%3d %60id%60  %25>
